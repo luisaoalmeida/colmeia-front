@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ErrorDialogComponent } from './error-dialog.component';
+import { DoacaoFormComponent } from './doacao-form.component';
 
-describe('ErrorDialogComponent', () => {
-  let component: ErrorDialogComponent;
-  let fixture: ComponentFixture<ErrorDialogComponent>;
+describe('DoacaoFormComponent', () => {
+  let component: DoacaoFormComponent;
+  let fixture: ComponentFixture<DoacaoFormComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ErrorDialogComponent ]
+      declarations: [ DoacaoFormComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ErrorDialogComponent);
+    fixture = TestBed.createComponent(DoacaoFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

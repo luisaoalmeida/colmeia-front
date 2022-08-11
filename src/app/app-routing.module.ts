@@ -2,12 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'telas' },
+  { path: '', pathMatch: 'full', redirectTo: 'doacoes' },
   {
-    path: 'telas',
-    loadChildren: () => import('./telas/telas.module').then(m => m.TelasModule)
+    path: 'doacoes',
+    loadChildren: () => import('./doacoes/doacoes.module').then(m => m.DoacoesModule)
   }
 ];
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
